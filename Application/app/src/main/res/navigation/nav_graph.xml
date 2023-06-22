@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/singInFragment">
+    <fragment
+        android:id="@+id/singInFragment"
+        android:name="com.pytheach.application.ui.SingInFragment"
+        android:label="SingInFragment" >
+        <action
+            android:id="@+id/action_singInFragment_to_lessonFragment5"
+            app:destination="@id/lessonFragment5" />
+        <action
+            android:id="@+id/action_singInFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonFragment5"
+        android:name="com.pytheach.application.ui.lesson.LessonFragment"
+        android:label="LessonFragment" />
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.pytheach.application.ui.SingUpFragment"
+        android:label="SingUpFragment" />
+</navigation>
